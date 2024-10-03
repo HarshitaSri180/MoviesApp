@@ -7,7 +7,7 @@ export default function SecondComp({ setMyList }) {
   const apiKey = "b477544";
 
   useEffect(() => {
-    const searchUrl = `http://www.omdbapi.com/?s=${searchTerm}&apikey=${apiKey}`;
+    const searchUrl = `https://www.omdbapi.com/?s=${searchTerm}&apikey=${apiKey}`;
 
     if (searchTerm) {
       fetch(searchUrl)
