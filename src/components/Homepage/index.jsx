@@ -38,7 +38,7 @@ export default function Index({ setMyList }) {
       >
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center justify-between">
-            <h1 className="font-bold text-4xl text-gray-200">Movies App</h1>
+            <h1 className="font-bold text-4xl text-gray-200">Moviffes App</h1>
             <i
               className="bi bi-x cursor-pointer lg:hidden"
               onClick={toggleSidebar}
