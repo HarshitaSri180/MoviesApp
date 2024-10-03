@@ -1,0 +1,84 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px; /* Consider using min-height for flexibility */
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+img.px-2.rounded-md {
+  width: 37px;
+}
+.p-2\.5.mt-3.flex.items-center.rounded-md.px-4.duration-300.cursor-pointer.hover\:bg-blue-600.text-white {
+  padding: 0px !important;
+}
+a:hover {
+  background-color: rgb(136, 8, 8) !important;
+}
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 0 !important;
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px; /* Set width of scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #707070; /* Color of the scroll thumb */
+  border-radius: 10px; /* Round edges */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #dbdbdb; /* Background of the scrollbar track */
+}
+
+p.text-gray-700.text-base.h-14.overflow-y-scroll {
+  /* Ensure your paragraph style is correctly defined */
+}
