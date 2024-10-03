@@ -15,7 +15,7 @@ export default function SecondComp({ setMyList }) {
         .then((data) => {
           if (data.Response === "True") {
             const moviePromises = data.Search.map((movie) => {
-              const detailUrl = `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apiKey}`;
+              const detailUrl = `https://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apiKey}`;
               return fetch(detailUrl).then((res) => res.json());
             });
 
